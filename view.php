@@ -8,7 +8,7 @@ $syntax = preg_replace('/[^A-Za-z0-9]+/', '', $_GET['syntax']);
 </head>
 <body>
 <pre data-language="<?=$syntax?>">
-    <?=htmlspecialchars(file_get_contents($file_name . '.' . $syntax));?>
+<?=htmlspecialchars(file_get_contents($file_name . '.' . $syntax));?>
 </pre>
 <script src="Rainbow/rainbow-custom.min.js"></script>
 </body>
